@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rekuperacja, wentylacja i pompy ciepła - Szczekociny, Częstochowa, Kraków | Omi-Went</title>
+<meta name="description" content="Omi-Went - projekt, montaż i serwis rekuperacji, wentylacji mechanicznej, pomp ciepła i klimatyzacji. Szczekociny, Częstochowa, Kraków, Katowice, Kielce.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/saira-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-1400.webp" imagesrcset="img/hero-960.webp 960w, img/hero-1400.webp 1400w, img/hero-2000.webp 2000w" imagesizes="(min-width:1000px) calc(150vh - 100px), max(100vw, 75vh)">
+<style>
+@font-face{font-family:"Saira";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/saira-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Saira";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/saira-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B2,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--g:#8CB43A;--gd:#5E8A1E;--b:#2E9FD3;--bd:#1D78A6;--r:#B3161B;--o:#D9621E;--k:#1B1E21;--k2:#2A2E33;--s:#EEF1F3;--t:#23272B;--m:#5A6168;--line:#D9DEE2;--w:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.6 Manrope,system-ui,sans-serif;color:var(--t);background:#fff;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Saira,sans-serif;line-height:1.12;margin:0;color:var(--k);font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(28px,3.4vw,44px)}
+h3{font-size:21px}
+p{margin:0}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:12px;font:700 16px/1 Saira,sans-serif;text-decoration:none;padding:16px 22px;border-radius:4px;border:2px solid transparent;cursor:pointer;white-space:nowrap}
+.btn svg{width:30px;height:12px;flex:none}
+.btn-g{background:var(--g);color:#111;border-color:var(--g)}
+.btn-g:hover{background:#9CC74A}
+.btn-o{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-o:hover{border-color:#fff}
+/* naglowek */
+.top{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:none;padding:0 clamp(16px,3vw,48px)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{height:30px;width:auto}
+.logo b{font:800 22px/1 Saira,sans-serif;letter-spacing:.02em;color:#3B4046}
+.logo b i{font-style:normal;color:var(--gd)}
+nav.menu{display:flex;gap:30px;align-items:center}
+nav.menu a{text-decoration:none;font-weight:600;font-size:15px;color:#33383D;padding:6px 0;border-bottom:2px solid transparent}
+nav.menu a:hover,nav.menu a.on{border-bottom-color:var(--g)}
+.tel-top{font:700 16px/1 Saira,sans-serif;text-decoration:none;color:var(--k);display:flex;align-items:center;gap:8px;padding:11px 16px;border:2px solid var(--k);border-radius:4px}
+.tel-top:hover{background:var(--k);color:#fff}
+.burger{display:none;background:none;border:0;width:44px;height:44px;padding:10px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--k);margin:6px 0;transition:.2s}
+/* hero */
+.hero{display:grid;grid-template-columns:38% 62%;min-height:calc(100svh - 68px);max-height:980px;background:var(--k);color:#fff;position:relative;overflow:hidden}
+.hero-txt{padding:clamp(40px,6vh,80px) clamp(24px,3.6vw,64px) clamp(110px,14vh,150px);display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.hero h1{color:#fff;font-size:clamp(34px,3.3vw,58px);font-weight:700}
+.hero h1 span{display:block;font-size:.56em;font-weight:500;color:#C9D0D6;margin-top:14px;line-height:1.25}
+.hero p.lead{margin-top:22px;font-size:clamp(16px,1.1vw,18px);color:#C4CBD1;max-width:34em}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-img{position:relative}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:62% 40%}
+.hero-img:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,30,33,.55),rgba(27,30,33,0) 22%);z-index:1}
+.streams{position:absolute;left:0;right:0;bottom:clamp(36px,6vh,64px);height:64px;z-index:3;pointer-events:none}
+.streams svg{width:100%;height:100%;display:block}
+.streams-m{display:none}
+.hero-area{position:absolute;left:clamp(24px,3.6vw,64px);bottom:14px;z-index:4;font-size:13px;color:#9AA3AB}
+/* sekcje */
+section{padding:clamp(64px,8vw,110px) 0}
+.grey{background:var(--s)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:38px}
+.head p{color:var(--m);max-width:34em}
+.sep{display:block;width:120px;height:20px;margin-bottom:16px}
+/* oferta */
+.offer{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;text-decoration:none;display:flex;flex-direction:column;border-bottom:4px solid var(--c,var(--g));box-shadow:0 1px 0 var(--line)}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--s)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .ph img{transform:scale(1.04)}
+.card .bd{padding:22px 4px 24px}
+.card h3{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.card h3 svg{width:28px;height:12px;flex:none;color:var(--c,var(--g))}
+.card p{color:var(--m);margin-top:10px;font-size:15px}
+/* schemat */
+.scheme{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(30px,5vw,80px);align-items:center}
+.diagram{background:#fff;padding:clamp(18px,3vw,40px);border:1px solid var(--line)}
+.diagram svg{width:100%;height:auto;display:block}
+.diagram text{font-family:Manrope,sans-serif;font-size:15px;font-weight:700;fill:#2A2E33}
+.scheme ul{list-style:none;padding:0;margin:22px 0 0}
+.scheme li{padding:12px 0 12px 34px;border-top:1px solid var(--line);position:relative}
+.scheme li:before{content:"";position:absolute;left:0;top:22px;width:20px;height:3px;background:var(--c)}
+.scheme li b{display:block;font-family:Saira,sans-serif;font-size:17px}
+.scheme .note{margin-top:22px;color:var(--m)}
+.opts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-weight:600;font-size:15px}
+.opts span{border-bottom:2px solid var(--g)}
+/* etapy */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--k)}
+.step{padding:28px 30px 10px 0}
+.step+.step{padding-left:30px;border-left:1px solid var(--line)}
+.step h3{margin-bottom:10px}
+.step h3 small{display:block;font:600 14px/1.4 Manrope,sans-serif;color:var(--gd);margin-bottom:6px}
+.step p{color:var(--m)}
+/* galeria */
+.gal{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 20px 14px;scrollbar-width:thin;cursor:grab;max-width:var(--w);margin:0 auto}
+.gal.drag{cursor:grabbing;scroll-snap-type:none}
+.gal figure{flex:0 0 clamp(260px,30vw,380px);margin:0;scroll-snap-align:start;background:#fff}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;pointer-events:none;user-select:none}
+.gal figcaption{padding:12px 14px;font-size:14px;color:var(--m)}
+.gal-nav{display:flex;gap:10px}
+.gal-nav button{width:48px;height:48px;border:2px solid var(--k);background:#fff;border-radius:4px;cursor:pointer;display:grid;place-items:center}
+.gal-nav button:hover{background:var(--k);color:#fff}
+.gal-nav svg{width:26px;height:12px}
+/* o nas */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:center}
+.about .ph{position:relative}
+.about .ph img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.about p{margin-top:16px;color:#3E444A}
+.brands{margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
+.brands small{display:block;color:var(--m);font-size:14px;margin-bottom:10px}
+.brands div{display:flex;flex-wrap:wrap;gap:6px 22px;font:700 18px/1.4 Saira,sans-serif;color:#3B4046}
+.rf{display:inline-block;margin-top:20px;font-weight:700;color:var(--gd)}
+/* obszar */
+.area{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(30px,5vw,70px);align-items:stretch}
+.cities{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;margin-top:24px}
+.cities div{padding:13px 0;border-top:1px solid #CFD5DA;font:600 18px/1.3 Saira,sans-serif;display:flex;justify-content:space-between}
+.cities div small{font:500 13px/1.3 Manrope,sans-serif;color:var(--m);align-self:center}
+.map{min-height:380px;background:#DDE2E6;position:relative}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* kontakt */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(30px,5vw,80px)}
+.cdata a{text-decoration:none}
+.cdata .big{display:block;font:700 clamp(28px,3vw,40px)/1.1 Saira,sans-serif;color:var(--k);margin-top:26px}
+.cdata .mail{display:block;font-size:19px;font-weight:700;margin-top:10px;color:var(--bd)}
+.cdata address{font-style:normal;margin-top:22px;color:#3E444A}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:var(--s);padding:clamp(20px,3vw,36px)}
+form label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:700}
+form .full{grid-column:1/-1}
+input,select,textarea{font:16px Manrope,sans-serif;padding:13px 14px;border:1px solid #C5CCD2;border-radius:4px;background:#fff;color:var(--t);width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--g);border-color:var(--g)}
+textarea{min-height:110px;resize:vertical}
+form .btn{justify-self:start}
+.fnote{font-size:13px;color:var(--m);grid-column:1/-1}
+.ok{display:none;grid-column:1/-1;font-weight:700;color:var(--gd)}
+/* stopka */
+footer{background:var(--k);color:#B8C0C7;padding:48px 0 26px;font-size:15px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+footer .logo b{color:#E3E7EA}
+footer h4{font:700 15px Saira,sans-serif;color:#fff;margin:0 0 10px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none;margin:0;padding:0;line-height:2}
+.fbot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid #33383E;margin-top:34px;padding-top:20px;font-size:14px}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+
+/* telefon */
+@media (max-width:1100px){.offer{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:999px){
+ nav.menu{position:fixed;inset:68px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px;border-bottom:1px solid var(--line);transform:translateY(-120%);transition:transform .25s;z-index:-1}
+ nav.menu.open{transform:none}
+ nav.menu a{padding:15px 0;border-bottom:1px solid var(--line);font-size:17px}
+ nav.menu a.on{border-bottom-color:var(--line);color:var(--gd)}
+ .burger{display:block}
+ .tel-top{display:none}
+ .burger.x span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+ .burger.x span:nth-child(2){opacity:0}
+ .burger.x span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+ .hero{grid-template-columns:1fr;min-height:0;max-height:none;display:flex;flex-direction:column-reverse}
+ .hero{min-height:calc(100svh - 68px)}
+ .hero-img{flex:1 1 auto;min-height:150px;max-height:520px}
+ .hero-img img{position:absolute;inset:0}
+ .hero>.streams{display:none}
+ .streams-m{display:block!important;top:auto;bottom:-6px;height:40px}
+ .hero-img:before{background:linear-gradient(0deg,rgba(27,30,33,.6),rgba(27,30,33,0) 40%)}
+ .hero-txt{padding:22px 20px 26px}
+ .hero h1{font-size:clamp(26px,7.2vw,38px)}
+ .hero h1 span{margin-top:8px;font-size:.62em}
+ .hero p.lead{margin-top:12px;font-size:15px;line-height:1.5}
+ .hero .cta{margin-top:24px;gap:10px;flex-wrap:nowrap}
+ .hero .cta .btn{flex:1 1 auto;justify-content:center}
+ .hero .btn-o .l{display:none}
+ .hero .btn{padding:15px 18px;font-size:15px}
+ .hero-area{display:none}
+ .scheme,.about,.area,.contact{grid-template-columns:1fr}
+ .head{flex-direction:column;align-items:flex-start}
+ .steps{grid-template-columns:1fr}
+ .step,.step+.step{padding:22px 0;border-left:0}
+ .step+.step{border-top:1px solid var(--line)}
+ .fgrid{grid-template-columns:1fr 1fr}
+ .fgrid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:600px){
+ .offer{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 10px}
+ .card{flex:0 0 80%;scroll-snap-align:start}
+ form{grid-template-columns:1fr}
+ .cities{grid-template-columns:1fr}
+ .map{min-height:300px}
+}
+@media (max-width:380px){.hero .btn{padding:14px 14px;font-size:14.5px}.hero .btn svg{width:22px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <linearGradient id="gGR" x1="44" y1="0" x2="76" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8CB43A"/><stop offset="1" stop-color="#B3161B"/></linearGradient>
+  <linearGradient id="gOB" x1="76" y1="0" x2="44" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#D9621E"/><stop offset="1" stop-color="#2E9FD3"/></linearGradient>
+  <symbol id="znak" viewBox="0 0 120 48">
+   <circle cx="60" cy="24" r="20" fill="none" stroke="#AEB5BB" stroke-width="2.6"/>
+   <circle cx="60" cy="24" r="15.5" fill="none" stroke="#AEB5BB" stroke-width="1.6"/>
+   <path d="M4 15H44L76 33H110" fill="none" stroke="url(#gGR)" stroke-width="3.6" stroke-linejoin="round"/>
+   <path d="M110 33l-7-4.5v9z" fill="#B3161B"/>
+   <path d="M114 15H76L44 33H12" fill="none" stroke="url(#gOB)" stroke-width="3.6" stroke-linejoin="round"/>
+   <path d="M6 33l7-4.5v9z" fill="#2E9FD3"/>
+  </symbol>
+  <symbol id="strz" viewBox="0 0 30 12"><path d="M0 6h26M20 1l6 5-6 5" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+  <symbol id="strzL" viewBox="0 0 30 12"><path d="M30 6H4M10 1L4 6l6 5" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+  <symbol id="sep" viewBox="0 0 120 20"><path d="M0 4H40L80 16H120" fill="none" stroke="#8CB43A" stroke-width="3"/><path d="M120 4H80L40 16H0" fill="none" stroke="#2E9FD3" stroke-width="3"/></symbol>
+ </defs>
+</svg>
+
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="Omi-Went - strona główna"><svg viewBox="0 0 120 48" aria-hidden="true"><use href="#znak"/></svg><b><i>OMI</i>-WENT</b></a>
+  <nav class="menu" id="menu">
+   <a href="#oferta" class="on">Oferta</a>
+   <a href="#rekuperacja">Jak działa rekuperacja</a>
+   <a href="#realizacje">Realizacje</a>
+   <a href="#o-nas">O nas</a>
+   <a href="#obszar">Obszar działania</a>
+   <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="tel-top" href="tel:+48664787187">664 787 187</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+ <div class="hero-txt">
+  <h1>Rekuperacja, wentylacja i pompy ciepła<span>Świeże powietrze wchodzi, ciepło zostaje w domu.</span></h1>
+  <p class="lead">Doradzamy, dobieramy urządzenia, montujemy i serwisujemy - w domach, biurach i halach. Szczekociny, Częstochowa, Kraków, Katowice, Kielce.</p>
+  <div class="cta">
+   <a class="btn btn-g" href="#kontakt">Zapytaj o wycenę <svg aria-hidden="true"><use href="#strz"/></svg></a>
+   <a class="btn btn-o" href="tel:+48664787187"><span>Zadzwoń<span class="l">: 664 787 187</span></span></a>
+  </div>
+ </div>
+ <div class="hero-img">
+  <img src="img/hero-1400.webp" srcset="img/hero-960.webp 960w, img/hero-1400.webp 1400w, img/hero-2000.webp 2000w" sizes="(min-width:1000px) calc(150vh - 100px), max(100vw, 75vh)" width="2000" height="1333" alt="Montaż jednostki zewnętrznej klimatyzacji na ścianie budynku" fetchpriority="high">
+  <div class="streams streams-m" aria-hidden="true">
+   <svg viewBox="0 0 1600 64" preserveAspectRatio="none">
+    <path d="M0 14H560L640 50H1600" fill="none" stroke="#8CB43A" stroke-width="3" vector-effect="non-scaling-stroke" opacity=".95"/>
+    <path d="M0 20H556L636 56H1600" fill="none" stroke="#B3161B" stroke-width="2" vector-effect="non-scaling-stroke" opacity=".9"/>
+    <path d="M1600 14H640L560 50H0" fill="none" stroke="#D9621E" stroke-width="3" vector-effect="non-scaling-stroke" opacity=".95"/>
+    <path d="M1600 20H644L564 56H0" fill="none" stroke="#2E9FD3" stroke-width="2" vector-effect="non-scaling-stroke" opacity=".9"/>
+   </svg>
+  </div>
+ </div>
+ <div class="streams" aria-hidden="true">
+  <svg viewBox="0 0 1600 64" preserveAspectRatio="none">
+   <path d="M0 14H560L640 50H1600" fill="none" stroke="#8CB43A" stroke-width="3" vector-effect="non-scaling-stroke" opacity=".95"/>
+   <path d="M0 20H556L636 56H1600" fill="none" stroke="#B3161B" stroke-width="2" vector-effect="non-scaling-stroke" opacity=".9"/>
+   <path d="M1600 14H640L560 50H0" fill="none" stroke="#D9621E" stroke-width="3" vector-effect="non-scaling-stroke" opacity=".95"/>
+   <path d="M1600 20H644L564 56H0" fill="none" stroke="#2E9FD3" stroke-width="2" vector-effect="non-scaling-stroke" opacity=".9"/>
+  </svg>
+ </div>
+ <div class="hero-area">Działamy w województwach śląskim, małopolskim i świętokrzyskim</div>
+</section>
+
+<section id="oferta">
+ <div class="wrap">
+  <div class="head">
+   <div><svg class="sep" aria-hidden="true"><use href="#sep"/></svg><h2>Czym się zajmujemy</h2></div>
+   <p>Instalacje w domach jednorodzinnych, budynkach biurowych, obiektach użyteczności publicznej i halach. Od konsultacji do serwisu po montażu.</p>
+  </div>
+  <div class="offer">
+   <a class="card" href="#rekuperacja" style="--c:#8CB43A"><div class="ph"><img src="img/rekuperacja-600.webp" srcset="img/rekuperacja-600.webp 600w, img/rekuperacja.webp 1200w" sizes="(max-width:600px) 80vw, (max-width:1100px) 50vw, 300px" width="600" height="450" loading="lazy" alt="Salon w nowoczesnym domu"></div><div class="bd"><h3>Rekuperacja <svg aria-hidden="true"><use href="#strz"/></svg></h3><p>Wentylacja mechaniczna z odzyskiem ciepła - centralna w nowych domach albo rekuperatory ścienne do domów już zamieszkałych.</p></div></a>
+   <a class="card" href="#kontakt" style="--c:#2E9FD3"><div class="ph"><img src="img/obiekty-600.webp" srcset="img/obiekty-600.webp 600w, img/obiekty.webp 1200w" sizes="(max-width:600px) 80vw, (max-width:1100px) 50vw, 300px" width="600" height="376" loading="lazy" alt="Instalacje w pomieszczeniu technicznym obiektu"></div><div class="bd"><h3>Wentylacja obiektów <svg aria-hidden="true"><use href="#strz"/></svg></h3><p>Systemy wentylacyjne dla biur, hal i obiektów publicznych, z centralami renomowanych producentów.</p></div></a>
+   <a class="card" href="#kontakt" style="--c:#B3161B"><div class="ph"><img src="img/pompy-600.webp" srcset="img/pompy-600.webp 600w, img/pompy.webp 1200w" sizes="(max-width:600px) 80vw, (max-width:1100px) 50vw, 300px" width="600" height="429" loading="lazy" alt="Pompa ciepła przy ścianie domu"></div><div class="bd"><h3>Pompy ciepła <svg aria-hidden="true"><use href="#strz"/></svg></h3><p>Ogrzewanie i ciepła woda z energii otoczenia - w nowych i użytkowanych budynkach, zamiast gazu, oleju czy węgla.</p></div></a>
+   <a class="card" href="#kontakt" style="--c:#D9621E"><div class="ph"><img src="img/klima-600.webp" srcset="img/klima-600.webp 600w, img/klima.webp 1200w" sizes="(max-width:600px) 80vw, (max-width:1100px) 50vw, 300px" width="600" height="429" loading="lazy" alt="Jednostka zewnętrzna przy budynku"></div><div class="bd"><h3>Klimatyzacja <svg aria-hidden="true"><use href="#strz"/></svg></h3><p>Od klasycznych układów split po systemy, w których jedna jednostka zewnętrzna obsługuje kilka pomieszczeń.</p></div></a>
+  </div>
+ </div>
+</section>
+
+<section id="rekuperacja" class="grey">
+ <div class="wrap scheme">
+  <div class="diagram">
+   <svg viewBox="0 0 640 330" role="img" aria-label="Schemat rekuperatora z wymiennikiem przeciwprądowym">
+    <defs>
+     <linearGradient id="dGR" x1="230" y1="0" x2="410" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8CB43A"/><stop offset="1" stop-color="#B3161B"/></linearGradient>
+     <linearGradient id="dOB" x1="410" y1="0" x2="230" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#D9621E"/><stop offset="1" stop-color="#2E9FD3"/></linearGradient>
+    </defs>
+    <rect x="0" y="0" width="160" height="330" fill="#F4F6F7"/>
+    <rect x="480" y="0" width="160" height="330" fill="#FBFCFC"/>
+    <text x="20" y="34" style="font-size:13px;fill:#5A6168;font-weight:600">NA ZEWNĄTRZ</text>
+    <text x="620" y="34" text-anchor="end" style="font-size:13px;fill:#5A6168;font-weight:600">W DOMU</text>
+    <circle cx="320" cy="165" r="104" fill="#fff" stroke="#AEB5BB" stroke-width="10"/>
+    <circle cx="320" cy="165" r="80" fill="none" stroke="#C9CED3" stroke-width="5"/>
+    <path d="M20 110H230L410 220H596" fill="none" stroke="url(#dGR)" stroke-width="14" stroke-linejoin="round"/>
+    <path d="M624 220l-30-17v34z" fill="#B3161B"/>
+    <path d="M620 110H410L230 220H44" fill="none" stroke="url(#dOB)" stroke-width="14" stroke-linejoin="round"/>
+    <path d="M16 220l30-17v34z" fill="#2E9FD3"/>
+    <text x="20" y="92">świeże z zewnątrz</text>
+    <text x="20" y="262">wyrzut, ochłodzone</text>
+    <text x="620" y="92" text-anchor="end">zużyte, ciepłe</text>
+    <text x="620" y="262" text-anchor="end">nawiew, ogrzane</text>
+    <text x="320" y="318" text-anchor="middle" style="font-size:13px;fill:#5A6168">wymiennik przeciwprądowy - strumienie się nie mieszają</text>
+   </svg>
+  </div>
+  <div>
+   <svg class="sep" aria-hidden="true"><use href="#sep"/></svg>
+   <h2>Jak działa rekuperacja</h2>
+   <p class="note">Ten schemat to nasze logo. Rekuperator wymienia zużyte powietrze na świeże z zewnątrz, a ciepło z powietrza wywiewanego przekazuje do nawiewanego. Do pokoi trafia świeże, ogrzane i przefiltrowane powietrze.</p>
+   <ul>
+    <li style="--c:#8CB43A"><b>Świeże powietrze</b>Czerpnia pobiera powietrze z zewnątrz, filtry zatrzymują kurz, smog i alergeny.</li>
+    <li style="--c:#B3161B"><b>Ciepło zostaje</b>W wymienniku świeże powietrze przejmuje ciepło od zużytego, więc mniej płacą Państwo za ogrzewanie.</li>
+    <li style="--c:#2E9FD3"><b>Bez otwierania okien</b>Wymiana powietrza działa niezależnie od pogody, a system pilnuje też wilgotności.</li>
+   </ul>
+   <div class="opts"><span>filtr smogowy</span><span>czujnik CO2</span><span>czujnik wilgotności</span><span>by-pass</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="etapy">
+ <div class="wrap">
+  <div class="head">
+   <div><svg class="sep" aria-hidden="true"><use href="#sep"/></svg><h2>Każda realizacja w trzech etapach</h2></div>
+   <p>Po montażu pokazujemy, jak obsługiwać urządzenia, a gdy coś się dzieje - przyjeżdżamy.</p>
+  </div>
+  <div class="steps">
+   <div class="step"><h3><small>Na początek</small>Konsultacja</h3><p>Poznajemy budynek i Państwa potrzeby. Zbieramy wszystkie dane potrzebne do wyboru najlepszego rozwiązania.</p></div>
+   <div class="step"><h3><small>Potem</small>Dobór i oferta</h3><p>Dobieramy urządzenia i przedstawiamy ofertę. Po akceptacji ustalamy najdogodniejszy termin montażu.</p></div>
+   <div class="step"><h3><small>Na koniec</small>Montaż i serwis</h3><p>Montujemy, uruchamiamy i szkolimy z obsługi. Zostajemy z Państwem także po montażu - serwis i pomoc przy każdym problemie.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="realizacje" class="grey">
+ <div class="wrap">
+  <div class="head">
+   <div><svg class="sep" aria-hidden="true"><use href="#sep"/></svg><h2>Realizacje</h2></div>
+   <div class="gal-nav"><button type="button" data-d="-1" aria-label="Poprzednie"><svg aria-hidden="true"><use href="#strzL"/></svg></button><button type="button" data-d="1" aria-label="Następne"><svg aria-hidden="true"><use href="#strz"/></svg></button></div>
+  </div>
+ </div>
+ <div class="gal" id="gal">
+  <figure><img src="img/kotlownia-600.webp" srcset="img/kotlownia-600.webp 600w, img/kotlownia.webp 1200w" sizes="(max-width:860px) 280px, 380px" width="600" height="400" loading="lazy" alt="Kotłownia z pompą ciepła i zasobnikiem"><figcaption>Pompa ciepła z zasobnikiem w kotłowni domu</figcaption></figure>
+  <figure><img src="img/dach-600.webp" srcset="img/dach-600.webp 600w, img/dach.webp 1200w" sizes="(max-width:860px) 280px, 380px" width="600" height="429" loading="lazy" alt="Pompy ciepła na dachu budynku"><figcaption>Jednostki zewnętrzne na dachu obiektu</figcaption></figure>
+  <figure><img src="img/pompy-600.webp" srcset="img/pompy-600.webp 600w, img/pompy.webp 1200w" sizes="(max-width:860px) 280px, 380px" width="600" height="429" loading="lazy" alt="Pompa ciepła przy domu"><figcaption>Pompa ciepła powietrze-woda przy domu jednorodzinnym</figcaption></figure>
+  <figure><img src="img/obiekty-600.webp" srcset="img/obiekty-600.webp 600w, img/obiekty.webp 1200w" sizes="(max-width:860px) 280px, 380px" width="600" height="376" loading="lazy" alt="Instalacje w obiekcie przemysłowym"><figcaption>Instalacje w obiekcie przemysłowym</figcaption></figure>
+  <figure><img src="img/rzad-600.webp" srcset="img/rzad-600.webp 600w, img/rzad.webp 1200w" sizes="(max-width:860px) 280px, 380px" width="600" height="429" loading="lazy" alt="Kilka jednostek zewnętrznych w rzędzie"><figcaption>Kilka jednostek zewnętrznych obok siebie</figcaption></figure>
+  <figure><img src="img/klima-600.webp" srcset="img/klima-600.webp 600w, img/klima.webp 1200w" sizes="(max-width:860px) 280px, 380px" width="600" height="429" loading="lazy" alt="Jednostka przy elewacji"><figcaption>Jednostka zewnętrzna przy elewacji</figcaption></figure>
+ </div>
+</section>
+
+<section id="o-nas">
+ <div class="wrap about">
+  <div class="ph"><img src="img/onas-600.webp" srcset="img/onas-600.webp 600w, img/onas.webp 1200w" sizes="(max-width:999px) 100vw, 600px" width="600" height="400" loading="lazy" alt="Monterzy omawiają projekt instalacji"></div>
+  <div>
+   <svg class="sep" aria-hidden="true"><use href="#sep"/></svg>
+   <h2>O nas</h2>
+   <p>Omi-Went to techniczne umiejętności połączone z rzetelnym doradztwem. Własną firmę założyliśmy po ponad 10 latach montowania systemów wentylacyjnych i rekuperacyjnych za granicą.</p>
+   <p>Doradzamy przy wyborze sprzętu, montujemy i zapewniamy opiekę gwarancyjną. Szybkość i jakość obsługi są dla nas najważniejsze - wielu klientów wraca do nas od lat.</p>
+   <div class="brands"><small>Pracujemy na urządzeniach m.in.:</small><div><span>Vallox</span><span>Spiroflex</span><span>Ventilus</span><span>Wolf</span><span>Nilan</span><span>Daikin</span><span>Stiebel Eltron</span></div></div>
+   <a class="rf" href="https://wizytowka.rzetelnafirma.pl/HAQ9TGG1" target="_blank" rel="noopener">Rzetelna Firma - zobacz wizytówkę</a>
+  </div>
+ </div>
+</section>
+
+<section id="obszar" class="grey">
+ <div class="wrap area">
+  <div>
+   <svg class="sep" aria-hidden="true"><use href="#sep"/></svg>
+   <h2>Obszar działania</h2>
+   <p style="margin-top:16px;color:var(--m)">Siedziba w Szczekocinach, montaże w województwach śląskim, małopolskim i świętokrzyskim.</p>
+   <div class="cities">
+    <div>Szczekociny <small>siedziba</small></div>
+    <div>Częstochowa <small>śląskie</small></div>
+    <div>Katowice <small>śląskie</small></div>
+    <div>Bytom <small>śląskie</small></div>
+    <div>Kraków <small>małopolskie</small></div>
+    <div>Kielce <small>świętokrzyskie</small></div>
+   </div>
+  </div>
+  <div class="map" id="map" data-src="https://www.google.com/maps?q=W%C5%82oszczowska+12,+Szczekociny&amp;z=8&amp;output=embed"></div>
+ </div>
+</section>
+
+<section id="kontakt">
+ <div class="wrap contact">
+  <div class="cdata">
+   <svg class="sep" aria-hidden="true"><use href="#sep"/></svg>
+   <h2>Porozmawiajmy o Państwa budynku</h2>
+   <p style="margin-top:16px;color:var(--m)">Proszę napisać, czego dotyczy inwestycja i jaki to budynek. Odpowiemy z propozycją rozwiązania i terminem.</p>
+   <a class="big" href="tel:+48664787187">+48 664 787 187</a>
+   <a class="mail" href="mailto:biuro@omi-went.pl">biuro@omi-went.pl</a>
+   <address>Omi-Went<br>ul. Włoszczowska 12<br>Szczekociny</address>
+  </div>
+  <form id="f" novalidate>
+   <label>Imię i nazwisko<input name="n" autocomplete="name"></label>
+   <label>Telefon<input name="t" type="tel" autocomplete="tel"></label>
+   <label>Czego dotyczy zapytanie<select name="u"><option>Rekuperacja</option><option>Wentylacja obiektu</option><option>Pompa ciepła</option><option>Klimatyzacja</option><option>Serwis</option></select></label>
+   <label>Rodzaj budynku<select name="b"><option>Dom w budowie</option><option>Dom zamieszkały</option><option>Biuro / lokal</option><option>Hala / obiekt</option></select></label>
+   <label class="full">Wiadomość<textarea name="w" placeholder="np. dom 160 m², stan surowy, okolice Częstochowy"></textarea></label>
+   <button class="btn btn-g" type="submit">Wyślij zapytanie <svg aria-hidden="true"><use href="#strz"/></svg></button>
+   <p class="ok" id="ok">To podgląd - formularz zacznie wysyłać wiadomości na docelowej stronie.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="fgrid">
+   <div><a class="logo" href="#"><svg viewBox="0 0 120 48" aria-hidden="true"><use href="#znak"/></svg><b><i>OMI</i>-WENT</b></a><p style="margin-top:14px;max-width:26em">Rekuperacja, wentylacja, pompy ciepła i klimatyzacja. Śląskie, małopolskie, świętokrzyskie.</p></div>
+   <div><h4>Oferta</h4><ul><li><a href="#rekuperacja">Rekuperacja</a></li><li><a href="#oferta">Wentylacja obiektów</a></li><li><a href="#oferta">Pompy ciepła</a></li><li><a href="#oferta">Klimatyzacja</a></li></ul></div>
+   <div><h4>Kontakt</h4><ul><li><a href="tel:+48664787187">+48 664 787 187</a></li><li><a href="mailto:biuro@omi-went.pl">biuro@omi-went.pl</a></li><li>ul. Włoszczowska 12, Szczekociny</li></ul></div>
+  </div>
+  <div class="fbot"><span>© 2026 Omi-Went · Polityka prywatności</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=omi-went.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+</div>
+ </div>
+</footer>
+
+<script>
+(function(){
+var b=document.getElementById('burger'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.classList.toggle('x',o);b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.classList.remove('x');b.setAttribute('aria-expanded',false)})});
+var links=[].slice.call(m.querySelectorAll('a')),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+function act(){var y=window.scrollY+120,i=-1;secs.forEach(function(s,k){if(s&&s.offsetTop<=y)i=k});links.forEach(function(a,k){a.classList.toggle('on',k===i)})}
+window.addEventListener('scroll',act,{passive:true});act();
+var g=document.getElementById('gal');
+document.querySelectorAll('.gal-nav button').forEach(function(x){x.addEventListener('click',function(){var f=g.querySelector('figure');g.scrollBy({left:(+x.dataset.d)*(f.offsetWidth+16),behavior:'smooth'})})});
+var d=false,sx=0,sl=0;
+g.addEventListener('mousedown',function(e){d=true;sx=e.pageX;sl=g.scrollLeft;g.classList.add('drag')});
+window.addEventListener('mouseup',function(){if(d){d=false;g.classList.remove('drag')}});
+g.addEventListener('mousemove',function(e){if(!d)return;e.preventDefault();g.scrollLeft=sl-(e.pageX-sx)});
+var mp=document.getElementById('map');
+var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){var f=document.createElement('iframe');f.src=mp.dataset.src;f.title='Mapa: Omi-Went, Szczekociny';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';mp.appendChild(f);io.disconnect()}},{rootMargin:'300px'});
+io.observe(mp);
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block'});
+})();
+</script>
+</body>
+</html>
